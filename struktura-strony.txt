@@ -1,0 +1,7 @@
+Personal Site sekcje:
+
+Sekcja 1 [ logo, menu button, którki opis i grafika]
+Sekcja 2 [Stack]
+Sekcja 3 [Experience, CV w pdfie]
+Sekcja 4 [Odnośniki - GIT, LINKEDIN]
+Sekcja 5 [Kontakt]
