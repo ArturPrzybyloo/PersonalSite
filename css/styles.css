@@ -138,6 +138,7 @@ body {
     flex-direction: row;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .motto-container {
@@ -462,7 +463,6 @@ h4 {
     font-size: 2rem;
     transform: translate(-50%, -50%);
     display: none;
-    position: relative;
 
 }
 
@@ -651,7 +651,6 @@ h4 {
 #introduce {
     margin-top: 20px;
     margin-bottom: 20px;
-    display: block;
 }
 
 /* EXPERIENCE */
@@ -669,6 +668,7 @@ h4 {
     right: 20%;
     width: 100%;
     height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
