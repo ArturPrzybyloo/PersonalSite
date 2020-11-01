@@ -63,6 +63,11 @@ body {
         margin-bottom: -40px;
     }
 
+    55% {
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+    }
+
     85% {
         letter-spacing: 8px;
         margin-bottom: -40px;
@@ -139,6 +144,14 @@ body {
     z-index: 99999;
 
 }
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+}
+
+
 
 .element {
     height: 303px;
@@ -326,6 +339,12 @@ body {
 
 }
 
+.header-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .preloader {
     position: fixed;
     top: 0%;
@@ -377,6 +396,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger-menu {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 .line {
@@ -457,12 +483,24 @@ body {
 
 }
 
+@media screen and (max-width: 600px) {
+    .change .line-1 {
+        transform: rotateZ(-405deg) translate(-4px, 10px);
+    }
+}
+
 .change .line-2 {
     opacity: 0;
 }
 
 .change .line-3 {
     transform: rotateZ(405deg) translate(-8px, -19px);
+}
+
+@media screen and (max-width: 600px) {
+    .change .line-3 {
+        transform: rotateZ(405deg) translate(-4px, -10px);
+    }
 }
 
 /* Introduction */
