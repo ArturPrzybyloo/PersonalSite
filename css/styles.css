@@ -29,6 +29,11 @@ body {
 }
 
 
+.first-letter {
+    color: #c22085;
+    font-weight: 900;
+}
+
 
 
 
@@ -43,6 +48,25 @@ body {
     font-family: sans-serif;
     font-weight: 600;
     font-size: 40px;
+    animation: text 4s 1;
+
+}
+
+@keyframes text {
+    0% {
+        color: #fff;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
 }
 
 @media screen and (max-width: 600px) {
