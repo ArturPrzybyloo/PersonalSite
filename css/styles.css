@@ -195,7 +195,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .motto-container {
-        margin-top: 220px;
+        margin-top: 250px;
     }
 }
 
@@ -900,6 +900,59 @@ h4 {
 .slogan.active {
     transition: 3s;
     opacity: 1;
+}
+
+/*Projects*/
+
+.carousel-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid #e9b171;
+    position: relative;
+}
+
+.carousel-container img {
+    opacity: 80%;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 650px;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 100000;
+    left: 5%;
+    color: #e9b171;
+    cursor: pointer;
+    font-size: 80px;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 100000;
+    right: 5%;
+    color: #e9b171;
+    cursor: pointer;
+    font-size: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    #prevBtn {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #nextBtn {
+        font-size: 30px;
+    }
 }
 
 
