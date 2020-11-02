@@ -48,7 +48,7 @@ body {
     font-family: sans-serif;
     font-weight: 600;
     font-size: 40px;
-    animation: text 3s 1;
+    animation: text 3.5s 1;
 
 }
 
@@ -209,6 +209,12 @@ body {
     -webkit-box-reflect: below 15px linear-gradient(transparent, transparent, rgba(0, 0, 0, .3));
 }
 
+@media screen and (max-width: 600px) {
+    .motto-box {
+        width: 70%;
+    }
+}
+
 .motto-container .motto-box:before {
     content: '';
     position: absolute;
@@ -282,13 +288,13 @@ body {
 
 @media screen and (max-width: 1100px) {
     .motto-content {
-        font-size: 17px;
+        font-size: 16.5px;
     }
 }
 
 @media screen and (max-width: 413px) {
     .motto-content {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -506,7 +512,7 @@ body {
 /* Introduction */
 
 .background-img {
-    opacity: 80%;
+    opacity: 60%;
     z-index: -9999;
     width: 100%;
     height: 100%;
@@ -546,6 +552,13 @@ h4 {
 .icon {
     height: 250px;
     width: 250px;
+}
+
+@media screen and (max-width: 1100px) {
+    .icon {
+        height: 200px;
+        width: 200px;
+    }
 }
 
 
@@ -768,7 +781,6 @@ h4 {
     right: 20%;
     width: 100%;
     height: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -912,6 +924,15 @@ h4 {
     pointer-events: none;
     transition: all .5s;
 }
+
+@media screen and (max-width: 600px) {
+    .to-top {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
 
 .to-top.active {
     bottom: 32px;
