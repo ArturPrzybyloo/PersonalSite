@@ -1206,6 +1206,11 @@ h4 {
     position: relative;
 }
 
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 
 /* Scroll TOP*/

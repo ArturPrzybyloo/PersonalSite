@@ -83,7 +83,7 @@ $(document).ready(function () {
 
         var email = $('#email').val();
         var name = $('#name').val();
-        var msg = $('#msg').val();
+        var msg = $('#message').val();
         var phone = $('#phone').val();
         var StatusElm = $('.status');
         StatusElm.empty();
@@ -91,31 +91,37 @@ $(document).ready(function () {
 
 
 
-        if (email.includes('@') && email.includes('.') && email.length > 5) {
-            return;
+        if (email.includes('@') && email.includes('.') && email.length > 5 && email !== null) {
+            console.log('Correct')
         } else {
-            event.preventDefault()
+            event.preventDefault();
             StatusElm.append('<div>Email is invalid</div>');
         }
 
-        if (name.length > 1) {
-            return;
+
+
+        if (name.length > 1 && name !== null) {
+            console.log('Correct')
         } else {
-            event.preventDefault()
+            event.preventDefault();
             StatusElm.append('<div>Fill up a name</div>');
         }
 
-        if (phone.length > 1 && typeof phone == "number") {
-            return;
+
+
+        if (phone.length > 1) {
+            console.log('Correct')
         } else {
-            event.preventDefault()
+            event.preventDefault();
             StatusElm.append('<div>Fill up a phone number</div>');
         }
 
+
+
         if (msg.length > 1) {
-            return;
+            console.log('Correct')
         } else {
-            event.preventDefault()
+            event.preventDefault();
             StatusElm.append('<div>Fill up your message</div>');
         }
 
