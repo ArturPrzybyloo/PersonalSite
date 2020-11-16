@@ -73,3 +73,56 @@ window.addEventListener("scroll", () => {
         slogan.classList.remove("active");
     }
 })
+
+
+//
+$(document).ready(function () {
+    $('.contact-form-btn').click(function (event) {
+
+        console.log('clicked')
+
+        var email = $('#email').val();
+        var name = $('#name').val();
+        var msg = $('#msg').val();
+        var phone = $('#phone').val();
+        var StatusElm = $('.status');
+        StatusElm.empty();
+        var phoneValidation = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+
+
+        if (email.includes('@') && email.includes('.') && email.length > 5) {
+            return;
+        } else {
+            event.preventDefault()
+            StatusElm.append('<div>Email is invalid</div>');
+        }
+
+        if (name.length > 1) {
+            return;
+        } else {
+            event.preventDefault()
+            StatusElm.append('<div>Fill up a name</div>');
+        }
+
+        if (phone.length > 1 && typeof phone == "number") {
+            return;
+        } else {
+            event.preventDefault()
+            StatusElm.append('<div>Fill up a phone number</div>');
+        }
+
+        if (msg.length > 1) {
+            return;
+        } else {
+            event.preventDefault()
+            StatusElm.append('<div>Fill up your message</div>');
+        }
+
+
+
+        console.log(email + name + msg + phone);
+
+
+    })
+})

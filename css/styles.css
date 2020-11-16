@@ -1174,7 +1174,7 @@ h4 {
     background: #946f44;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .visit {
         font-size: 0.8rem;
         padding: 8px 40px;
@@ -1199,6 +1199,11 @@ h4 {
     opacity: 60%;
     padding-top: 20px;
 
+}
+
+.status {
+    color: red;
+    position: relative;
 }
 
 

@@ -93,7 +93,7 @@
                     <div class="motto-content">
                         I am Artur, an automation test enginner based in Cracow, Poland.
                         I have over a year of commercial experience in developing
-                        automation tests ,using Selenium framework and Java programming
+                        automation tests, by using Selenium framework and Java programming
                         language. I have experience in REST API testing automation with Rest Assured
                         and Postman scripts.
                         I am also a passionate of front-end development and
@@ -384,12 +384,14 @@
 <div class="contact-form-container">
     <h1>Contact Me.</h1>
     <div class="border"></div>
-    <form class="contact-form" action="index.html" method="POST">
-        <input type="text" class="contact-form-text" placeholder="Your name">
-        <input type="email" class="contact-form-text" placeholder="Your email">
-        <input type="text" class="contact-form-text" placeholder="Your phone">
-        <textarea class="contact-form-text" placeholder="Your message"></textarea>
+    <form class="contact-form" action="https://formspree.io/a.przybyloo@gmail.com" method="post">
+        <input type="text" id="name" class="contact-form-text" placeholder="Your name">
+        <input type="email" id="email" class="contact-form-text" placeholder="Your email">
+        <input type="text" id="phone" class="contact-form-text" placeholder="Your phone">
+        <textarea class="contact-form-text" id="msg" placeholder="Your message"></textarea>
+        <div class="status"></div>
         <input type="submit" class="contact-form-btn" value="Send">
+        
     </form>
 </div>
  
