@@ -75,27 +75,27 @@ window.addEventListener("scroll", () => {
 })
 
 
-//
+//Function to send an email on click send button
 $(document).ready(function () {
     $('.contact-form-btn').click(function (event) {
 
         console.log('clicked')
-
+        //Get variables fromform
         var email = $('#email').val();
         var name = $('#name').val();
         var msg = $('#message').val();
         var phone = $('#phone').val();
         var StatusElm = $('.status');
         StatusElm.empty();
-        var phoneValidation = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
 
 
+        //Form Validations
         if (email.includes('@') && email.includes('.') && email.length > 5 && email !== null) {
             console.log('Correct')
         } else {
             event.preventDefault();
-            StatusElm.append('<div>Email is invalid</div>');
+            StatusElm.append('<div>Email is invalid.</div>');
         }
 
 
@@ -104,7 +104,7 @@ $(document).ready(function () {
             console.log('Correct')
         } else {
             event.preventDefault();
-            StatusElm.append('<div>Fill up a name</div>');
+            StatusElm.append('<div>Fill up a name.</div>');
         }
 
 
@@ -113,22 +113,21 @@ $(document).ready(function () {
             console.log('Correct')
         } else {
             event.preventDefault();
-            StatusElm.append('<div>Fill up a phone number</div>');
+            StatusElm.append('<div>Fill up a phone number.</div>');
         }
 
 
 
-        if (msg.length > 1) {
+        if (msg.length >= 10) {
             console.log('Correct')
         } else {
             event.preventDefault();
-            StatusElm.append('<div>Fill up your message</div>');
+            StatusElm.append('<div>Fill up your message.</div>');
         }
-
-
-
-        console.log(email + name + msg + phone);
-
-
     })
+
+
+
+
+
 })
